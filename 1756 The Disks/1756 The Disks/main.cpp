@@ -27,13 +27,12 @@ int main(){
         s.push(a);
     }
     
-    int front = s.top();
     
     for(int i=1;i<=N;i++){
-        while(front<pizza[i] and !s.empty()){
+        if(s.empty()){printf("0");return 0;}
+        while(s.top()<pizza[i]){
             s.pop();
-            if(s.empty()){printf("%d",s.size());return 0;}
-            front = s.top();
+            if(s.empty()){printf("0");return 0;}
         }
         s.pop();
         
