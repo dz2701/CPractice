@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C9F0D33124BEBBFA0023AFB7 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9F0D33024BEBBFA0023AFB7 /* main.cpp */; };
+		C9F0D30B24BEA2CB0023AFB7 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9F0D30A24BEA2CB0023AFB7 /* main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		C9F0D32B24BEBBFA0023AFB7 /* CopyFiles */ = {
+		C9F0D30524BEA2CA0023AFB7 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -23,12 +23,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		C9F0D32D24BEBBFA0023AFB7 /* 16763 Fine Dining */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "16763 Fine Dining"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C9F0D33024BEBBFA0023AFB7 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		C9F0D30724BEA2CB0023AFB7 /* 1517 Bubble Sort */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "1517 Bubble Sort"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9F0D30A24BEA2CB0023AFB7 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		C9F0D32A24BEBBFA0023AFB7 /* Frameworks */ = {
+		C9F0D30424BEA2CA0023AFB7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -38,65 +38,65 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		C9F0D32424BEBBFA0023AFB7 = {
+		C9F0D2FE24BEA2CA0023AFB7 = {
 			isa = PBXGroup;
 			children = (
-				C9F0D32F24BEBBFA0023AFB7 /* 16763 Fine Dining */,
-				C9F0D32E24BEBBFA0023AFB7 /* Products */,
+				C9F0D30924BEA2CB0023AFB7 /* 1517 Bubble Sort */,
+				C9F0D30824BEA2CB0023AFB7 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		C9F0D32E24BEBBFA0023AFB7 /* Products */ = {
+		C9F0D30824BEA2CB0023AFB7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C9F0D32D24BEBBFA0023AFB7 /* 16763 Fine Dining */,
+				C9F0D30724BEA2CB0023AFB7 /* 1517 Bubble Sort */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		C9F0D32F24BEBBFA0023AFB7 /* 16763 Fine Dining */ = {
+		C9F0D30924BEA2CB0023AFB7 /* 1517 Bubble Sort */ = {
 			isa = PBXGroup;
 			children = (
-				C9F0D33024BEBBFA0023AFB7 /* main.cpp */,
+				C9F0D30A24BEA2CB0023AFB7 /* main.cpp */,
 			);
-			path = "16763 Fine Dining";
+			path = "1517 Bubble Sort";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C9F0D32C24BEBBFA0023AFB7 /* 16763 Fine Dining */ = {
+		C9F0D30624BEA2CA0023AFB7 /* 1517 Bubble Sort */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C9F0D33424BEBBFA0023AFB7 /* Build configuration list for PBXNativeTarget "16763 Fine Dining" */;
+			buildConfigurationList = C9F0D30E24BEA2CB0023AFB7 /* Build configuration list for PBXNativeTarget "1517 Bubble Sort" */;
 			buildPhases = (
-				C9F0D32924BEBBFA0023AFB7 /* Sources */,
-				C9F0D32A24BEBBFA0023AFB7 /* Frameworks */,
-				C9F0D32B24BEBBFA0023AFB7 /* CopyFiles */,
+				C9F0D30324BEA2CA0023AFB7 /* Sources */,
+				C9F0D30424BEA2CA0023AFB7 /* Frameworks */,
+				C9F0D30524BEA2CA0023AFB7 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "16763 Fine Dining";
-			productName = "16763 Fine Dining";
-			productReference = C9F0D32D24BEBBFA0023AFB7 /* 16763 Fine Dining */;
+			name = "1517 Bubble Sort";
+			productName = "1517 Bubble Sort";
+			productReference = C9F0D30724BEA2CB0023AFB7 /* 1517 Bubble Sort */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		C9F0D32524BEBBFA0023AFB7 /* Project object */ = {
+		C9F0D2FF24BEA2CA0023AFB7 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 1150;
 				ORGANIZATIONNAME = dz2701;
 				TargetAttributes = {
-					C9F0D32C24BEBBFA0023AFB7 = {
+					C9F0D30624BEA2CA0023AFB7 = {
 						CreatedOnToolsVersion = 11.5;
 					};
 				};
 			};
-			buildConfigurationList = C9F0D32824BEBBFA0023AFB7 /* Build configuration list for PBXProject "16763 Fine Dining" */;
+			buildConfigurationList = C9F0D30224BEA2CA0023AFB7 /* Build configuration list for PBXProject "1517 Bubble Sort" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -104,29 +104,29 @@
 				en,
 				Base,
 			);
-			mainGroup = C9F0D32424BEBBFA0023AFB7;
-			productRefGroup = C9F0D32E24BEBBFA0023AFB7 /* Products */;
+			mainGroup = C9F0D2FE24BEA2CA0023AFB7;
+			productRefGroup = C9F0D30824BEA2CB0023AFB7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C9F0D32C24BEBBFA0023AFB7 /* 16763 Fine Dining */,
+				C9F0D30624BEA2CA0023AFB7 /* 1517 Bubble Sort */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		C9F0D32924BEBBFA0023AFB7 /* Sources */ = {
+		C9F0D30324BEA2CA0023AFB7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C9F0D33124BEBBFA0023AFB7 /* main.cpp in Sources */,
+				C9F0D30B24BEA2CB0023AFB7 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		C9F0D33224BEBBFA0023AFB7 /* Debug */ = {
+		C9F0D30C24BEA2CB0023AFB7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -184,7 +184,7 @@
 			};
 			name = Debug;
 		};
-		C9F0D33324BEBBFA0023AFB7 /* Release */ = {
+		C9F0D30D24BEA2CB0023AFB7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -235,7 +235,7 @@
 			};
 			name = Release;
 		};
-		C9F0D33524BEBBFA0023AFB7 /* Debug */ = {
+		C9F0D30F24BEA2CB0023AFB7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -245,7 +245,7 @@
 			};
 			name = Debug;
 		};
-		C9F0D33624BEBBFA0023AFB7 /* Release */ = {
+		C9F0D31024BEA2CB0023AFB7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -258,25 +258,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C9F0D32824BEBBFA0023AFB7 /* Build configuration list for PBXProject "16763 Fine Dining" */ = {
+		C9F0D30224BEA2CA0023AFB7 /* Build configuration list for PBXProject "1517 Bubble Sort" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C9F0D33224BEBBFA0023AFB7 /* Debug */,
-				C9F0D33324BEBBFA0023AFB7 /* Release */,
+				C9F0D30C24BEA2CB0023AFB7 /* Debug */,
+				C9F0D30D24BEA2CB0023AFB7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C9F0D33424BEBBFA0023AFB7 /* Build configuration list for PBXNativeTarget "16763 Fine Dining" */ = {
+		C9F0D30E24BEA2CB0023AFB7 /* Build configuration list for PBXNativeTarget "1517 Bubble Sort" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C9F0D33524BEBBFA0023AFB7 /* Debug */,
-				C9F0D33624BEBBFA0023AFB7 /* Release */,
+				C9F0D30F24BEA2CB0023AFB7 /* Debug */,
+				C9F0D31024BEA2CB0023AFB7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = C9F0D32524BEBBFA0023AFB7 /* Project object */;
+	rootObject = C9F0D2FF24BEA2CA0023AFB7 /* Project object */;
 }

@@ -2,85 +2,87 @@
 //  main.cpp
 //  16763 Fine Dining
 //
-//  Created by dz2701 on 7/13/20.
+//  Created by dz2701 on 7/15/20.
 //  Copyright © 2020 dz2701. All rights reserved.
 //
 
 #include <bits/stdc++.h>
 using namespace std;
 const int MAX = 1e5+5;
-const int INF = 1e8;
-vector<pair<int,int>>path[MAX];
-struct edge{int st, ed; long long cost;};
-struct travel{int node; long long val;};
-bool tcmp(travel a, travel b){return a.val>b.val;}
-bool cmp(edge a, edge b){return a.cost>b.cost;}
-priority_queue<edge,vector<edge>,function<bool(edge,edge)>>pq(cmp);
-priority_queue<travel,vector<travel>,function<bool(travel,travel)>>q(tcmp);
-bool check[MAX]; bool checktwice[MAX];
-int haybales[MAX];
-int n, m, k, val[MAX];
-void possible(){
-    for(int i=1;i<n;i++){
-        cout << "1\n";
-    }
-}
-long long bfsVals[MAX];
-bool check_haybale(int i){
-    if(haybales[i]){return true;}
-    fill(&checktwice[0],&checktwice[n+1],false);
-    q.push({i,0});
-    while(!q.empty()){
-        auto now = q.top();q.pop();
-        if(checktwice[now.node])continue;
-        checktwice[now.node] = true;
-        for(auto adj: path[now.node]){
-            q.push({adj.first,adj.second+now.val});
-            if(haybales[adj.first]){
-                //check if elligible
-                if(adj.second+now.val+val[adj.second]<=val[i]+haybales[adj.first]){
-                    return true;
-                }
-            }
-        }
-    }
-    return false;
-}
+const int INF = 1e9;
+struct value{
+    int val;
+    bool take;
+};
+value val[MAX]; bool check[MAX];
+int n,m ,k; vector<pair<int,int>>path[MAX];
+pair<int,int>haybale[MAX];
+
+struct state{
+    int node, val;
+    bool take;
+};
+bool cmp(state a, state b){return a.val>b.val;}
+priority_queue<state, vector<state>, function<bool(state,state)>>pq(cmp);
+int visit[MAX];
 int main(){
-    ios_base::sync_with_stdio(false);cin.tie(0);
     cin >> n >> m >> k;
     for(int i=1;i<=m;i++){
-        int a, b, c;
-        cin >> a >> b >> c;
-        path[a].push_back({b,c});
-        path[b].push_back({a,c});
+        int a, b, c; cin>> a >> b >> c;
+        path[a].push_back(make_pair(b,c));
+        path[b].push_back(make_pair(a,c));
     }
-    for(int i=1;i<=k;i++){
-        int a, b;
-        cin >> a >> b;
-        haybales[a] = b;
+    for(int i=1;i<=k;i++)cin >> haybale[i].first >> haybale[i].second;
+    //dijkstra from N
+    for(int i=1;i<=n;i++){
+        val[i].val = INF;
+        val[i].take = false;
     }
-    for(int i=1;i<n;i++){
-        val[i]=INF;
-        check[i]=false;
-    }
-    val[n]=0; q.push({n,0});
-    while(!q.empty()){
-        auto now = q.top(); q.pop();
-        if(check[now.node])continue;
-        check[now.node] = true;
+    fill(&visit[0],&visit[MAX],false);
+    val[n] = {0,false}; pq.push({n,0,false});
+    while(!pq.empty()){
+        auto now = pq.top(); pq.pop();
+        if(visit[now.node])continue;
+        visit[now.node] = true;
         for(auto adj: path[now.node]){
-            if(val[adj.first] > val[now.node]+adj.second){
-                val[adj.first] = val[now.node]+adj.second;
-                q.push({adj.first,val[adj.first]});
+            if(val[adj.first].val>adj.second+now.val){
+                val[adj.first].val = adj.second+now.val;
+                pq.push({adj.first,val[adj.first].val,val[adj.first].take});
             }
         }
     }
-    
-    //just run bfs from every node except the end and haybales
-    for(int i=1;i<=n;i++){
-        if(haybales[i])printf("yes");
+    //now 'take the route' i.e update the nodes
+    int mm = 1e9;
+    int midx = -1;
+    for(int i=1;i<=k;i++){
+        val[haybale[i].first].val-=haybale[i].second;
+        val[haybale[i].first].take = true;
+        if(mm>val[haybale[i].first].val+path[n][haybale[i].first].first){
+            mm = val[haybale[i].first].val+path[n][haybale[i].first].first;
+            midx = haybale[i].first;
+        }
     }
     
+    //now do dijkstra again, but if visit the haybale node, turn true;
+    fill(&visit[0],&visit[MAX],false);
+    if(midx==-1)pq.push({n,0,false});
+    else pq.push({n,mm,true});
+    while(!pq.empty()){
+        auto now = pq.top(); pq.pop();
+        if(visit[now.node])continue;
+        visit[now.node]=true;
+        for(auto adj: path[now.node]){
+            val[adj.first].val = min(val[adj.first].val,adj.second + now.val);
+            if(now.take){
+                val[adj.first].take = true;
+            }
+                pq.push({adj.first,val[adj.first].val,val[adj.first].take});
+            }
+        }
+    for(int i=1;i<n;i++){
+        if(val[i].take)printf("1\n");
+        else printf("0\n");
+    }
     return 0;
+    
 }

@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C9F0D33124BEBBFA0023AFB7 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9F0D33024BEBBFA0023AFB7 /* main.cpp */; };
+		C966D7A024C1532700C2B8A0 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C966D79F24C1532700C2B8A0 /* main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		C9F0D32B24BEBBFA0023AFB7 /* CopyFiles */ = {
+		C966D79A24C1532700C2B8A0 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -23,12 +23,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		C9F0D32D24BEBBFA0023AFB7 /* 16763 Fine Dining */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "16763 Fine Dining"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C9F0D33024BEBBFA0023AFB7 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		C966D79C24C1532700C2B8A0 /* 2042 구간 합 구하기: Segment Tree Ver. */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "2042 구간 합 구하기: Segment Tree Ver."; sourceTree = BUILT_PRODUCTS_DIR; };
+		C966D79F24C1532700C2B8A0 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		C9F0D32A24BEBBFA0023AFB7 /* Frameworks */ = {
+		C966D79924C1532700C2B8A0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -38,65 +38,65 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		C9F0D32424BEBBFA0023AFB7 = {
+		C966D79324C1532700C2B8A0 = {
 			isa = PBXGroup;
 			children = (
-				C9F0D32F24BEBBFA0023AFB7 /* 16763 Fine Dining */,
-				C9F0D32E24BEBBFA0023AFB7 /* Products */,
+				C966D79E24C1532700C2B8A0 /* 2042 구간 합 구하기: Segment Tree Ver. */,
+				C966D79D24C1532700C2B8A0 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		C9F0D32E24BEBBFA0023AFB7 /* Products */ = {
+		C966D79D24C1532700C2B8A0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C9F0D32D24BEBBFA0023AFB7 /* 16763 Fine Dining */,
+				C966D79C24C1532700C2B8A0 /* 2042 구간 합 구하기: Segment Tree Ver. */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		C9F0D32F24BEBBFA0023AFB7 /* 16763 Fine Dining */ = {
+		C966D79E24C1532700C2B8A0 /* 2042 구간 합 구하기: Segment Tree Ver. */ = {
 			isa = PBXGroup;
 			children = (
-				C9F0D33024BEBBFA0023AFB7 /* main.cpp */,
+				C966D79F24C1532700C2B8A0 /* main.cpp */,
 			);
-			path = "16763 Fine Dining";
+			path = "2042 구간 합 구하기: Segment Tree Ver.";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C9F0D32C24BEBBFA0023AFB7 /* 16763 Fine Dining */ = {
+		C966D79B24C1532700C2B8A0 /* 2042 구간 합 구하기: Segment Tree Ver. */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C9F0D33424BEBBFA0023AFB7 /* Build configuration list for PBXNativeTarget "16763 Fine Dining" */;
+			buildConfigurationList = C966D7A324C1532700C2B8A0 /* Build configuration list for PBXNativeTarget "2042 구간 합 구하기: Segment Tree Ver." */;
 			buildPhases = (
-				C9F0D32924BEBBFA0023AFB7 /* Sources */,
-				C9F0D32A24BEBBFA0023AFB7 /* Frameworks */,
-				C9F0D32B24BEBBFA0023AFB7 /* CopyFiles */,
+				C966D79824C1532700C2B8A0 /* Sources */,
+				C966D79924C1532700C2B8A0 /* Frameworks */,
+				C966D79A24C1532700C2B8A0 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "16763 Fine Dining";
-			productName = "16763 Fine Dining";
-			productReference = C9F0D32D24BEBBFA0023AFB7 /* 16763 Fine Dining */;
+			name = "2042 구간 합 구하기: Segment Tree Ver.";
+			productName = "2042 구간 합 구하기: Segment Tree Ver.";
+			productReference = C966D79C24C1532700C2B8A0 /* 2042 구간 합 구하기: Segment Tree Ver. */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		C9F0D32524BEBBFA0023AFB7 /* Project object */ = {
+		C966D79424C1532700C2B8A0 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 1150;
 				ORGANIZATIONNAME = dz2701;
 				TargetAttributes = {
-					C9F0D32C24BEBBFA0023AFB7 = {
+					C966D79B24C1532700C2B8A0 = {
 						CreatedOnToolsVersion = 11.5;
 					};
 				};
 			};
-			buildConfigurationList = C9F0D32824BEBBFA0023AFB7 /* Build configuration list for PBXProject "16763 Fine Dining" */;
+			buildConfigurationList = C966D79724C1532700C2B8A0 /* Build configuration list for PBXProject "2042 구간 합 구하기: Segment Tree Ver." */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -104,29 +104,29 @@
 				en,
 				Base,
 			);
-			mainGroup = C9F0D32424BEBBFA0023AFB7;
-			productRefGroup = C9F0D32E24BEBBFA0023AFB7 /* Products */;
+			mainGroup = C966D79324C1532700C2B8A0;
+			productRefGroup = C966D79D24C1532700C2B8A0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C9F0D32C24BEBBFA0023AFB7 /* 16763 Fine Dining */,
+				C966D79B24C1532700C2B8A0 /* 2042 구간 합 구하기: Segment Tree Ver. */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		C9F0D32924BEBBFA0023AFB7 /* Sources */ = {
+		C966D79824C1532700C2B8A0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C9F0D33124BEBBFA0023AFB7 /* main.cpp in Sources */,
+				C966D7A024C1532700C2B8A0 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		C9F0D33224BEBBFA0023AFB7 /* Debug */ = {
+		C966D7A124C1532700C2B8A0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -184,7 +184,7 @@
 			};
 			name = Debug;
 		};
-		C9F0D33324BEBBFA0023AFB7 /* Release */ = {
+		C966D7A224C1532700C2B8A0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -235,7 +235,7 @@
 			};
 			name = Release;
 		};
-		C9F0D33524BEBBFA0023AFB7 /* Debug */ = {
+		C966D7A424C1532700C2B8A0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -245,7 +245,7 @@
 			};
 			name = Debug;
 		};
-		C9F0D33624BEBBFA0023AFB7 /* Release */ = {
+		C966D7A524C1532700C2B8A0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -258,25 +258,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C9F0D32824BEBBFA0023AFB7 /* Build configuration list for PBXProject "16763 Fine Dining" */ = {
+		C966D79724C1532700C2B8A0 /* Build configuration list for PBXProject "2042 구간 합 구하기: Segment Tree Ver." */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C9F0D33224BEBBFA0023AFB7 /* Debug */,
-				C9F0D33324BEBBFA0023AFB7 /* Release */,
+				C966D7A124C1532700C2B8A0 /* Debug */,
+				C966D7A224C1532700C2B8A0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C9F0D33424BEBBFA0023AFB7 /* Build configuration list for PBXNativeTarget "16763 Fine Dining" */ = {
+		C966D7A324C1532700C2B8A0 /* Build configuration list for PBXNativeTarget "2042 구간 합 구하기: Segment Tree Ver." */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C9F0D33524BEBBFA0023AFB7 /* Debug */,
-				C9F0D33624BEBBFA0023AFB7 /* Release */,
+				C966D7A424C1532700C2B8A0 /* Debug */,
+				C966D7A524C1532700C2B8A0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = C9F0D32524BEBBFA0023AFB7 /* Project object */;
+	rootObject = C966D79424C1532700C2B8A0 /* Project object */;
 }
