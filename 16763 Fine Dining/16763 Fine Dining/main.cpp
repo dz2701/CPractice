@@ -14,7 +14,7 @@ struct value{
     int val;
     bool take;
 };
-value val[MAX]; bool check[MAX];
+value val[MAX], val2[MAX] ; bool check[MAX];
 int n,m ,k; vector<pair<int,int>>path[MAX];
 pair<int,int>haybale[MAX];
 
@@ -26,6 +26,9 @@ bool cmp(state a, state b){return a.val>b.val;}
 priority_queue<state, vector<state>, function<bool(state,state)>>pq(cmp);
 int visit[MAX];
 int main(){
+    ios_base::sync_with_stdio(false); cin.tie(0);
+   //freopen("dining.in","r",stdin);
+    //freopen("dining.out","w",stdout);
     cin >> n >> m >> k;
     for(int i=1;i<=m;i++){
         int a, b, c; cin>> a >> b >> c;
@@ -52,37 +55,16 @@ int main(){
         }
     }
     //now 'take the route' i.e update the nodes
-    int mm = 1e9;
-    int midx = -1;
     for(int i=1;i<=k;i++){
         val[haybale[i].first].val-=haybale[i].second;
         val[haybale[i].first].take = true;
-        if(mm>val[haybale[i].first].val+path[n][haybale[i].first].first){
-            mm = val[haybale[i].first].val+path[n][haybale[i].first].first;
-            midx = haybale[i].first;
-        }
+        
     }
     
     //now do dijkstra again, but if visit the haybale node, turn true;
     fill(&visit[0],&visit[MAX],false);
-    if(midx==-1)pq.push({n,0,false});
-    else pq.push({n,mm,true});
-    while(!pq.empty()){
-        auto now = pq.top(); pq.pop();
-        if(visit[now.node])continue;
-        visit[now.node]=true;
-        for(auto adj: path[now.node]){
-            val[adj.first].val = min(val[adj.first].val,adj.second + now.val);
-            if(now.take){
-                val[adj.first].take = true;
-            }
-                pq.push({adj.first,val[adj.first].val,val[adj.first].take});
-            }
-        }
-    for(int i=1;i<n;i++){
-        if(val[i].take)printf("1\n");
-        else printf("0\n");
-    }
+    
+    x
     return 0;
     
 }

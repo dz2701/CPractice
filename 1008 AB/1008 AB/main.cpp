@@ -6,4 +6,14 @@
 //  Copyright © 2020 dz2701. All rights reserved.
 //
 #include <bits/stdc++.h>
-int main(){double a,b;std::cin>>a>>b;std::cout<<a/b;}
+using namespace std;
+float round(float var, int n){
+    float val = (int)(var * pow(10,n) + 0.5);
+    return (float)val/pow(10,n);
+}
+int main(){
+    float a,b; cin >> a >> b;
+    float ans = a/b;
+    cout <<fixed<<setprecision(100)<<ans;
+    
+}
